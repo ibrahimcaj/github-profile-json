@@ -1,0 +1,80 @@
+/*
+
+Qt Creator dark color scheme
+
+*/
+
+
+.hljs {
+  fill: #aaaaaa;
+  background: #000000;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  fill: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal {
+  fill: #ff55ff;
+}
+
+.hljs-code
+.hljs-selector-class {
+  fill: #aaaaff;
+}
+
+.hljs-emphasis,
+.hljs-stronge,
+.hljs-type {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-function,
+.hljs-section,
+.hljs-symbol,
+.hljs-name {
+  fill: #ffff55;
+}
+
+.hljs-subst,
+.hljs-tag,
+.hljs-title {
+  fill: #aaaaaa;
+}
+
+.hljs-attribute {
+  fill: #ff5555;
+}
+
+.hljs-variable,
+.hljs-params,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  fill: #8888ff;
+}
+
+.hljs-string,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-type,
+.hljs-built_in,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-addition,
+.hljs-link {
+  fill: #ff55ff;
+}
+
+.hljs-comment,
+.hljs-meta,
+.hljs-deletion {
+  fill: #55ffff;
+}

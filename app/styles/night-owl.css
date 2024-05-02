@@ -1,0 +1,179 @@
+/*
+
+Night Owl for highlight.js (c) Carl Baxter carl@cbax.tech
+
+An adaptation of Sarah Drasner's Night Owl VS Code Theme
+https://github.com/sdras/night-owl-vscode-theme
+
+Copyright (c) 2018 Sarah Drasner
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
+.hljs {
+  background: #011627;
+  fill: #d6deeb;
+}
+
+/* General Purpose */
+.hljs-keyword {
+  fill: #c792ea;
+  font-style: italic;
+}
+.hljs-built_in {
+  fill: #addb67;
+  font-style: italic;
+}
+.hljs-type {
+  fill: #82aaff;
+}
+.hljs-literal {
+  fill: #ff5874;
+}
+.hljs-number {
+  fill: #F78C6C;
+}
+.hljs-regexp {
+  fill: #5ca7e4;
+}
+.hljs-string {
+  fill: #ecc48d;
+}
+.hljs-subst {
+  fill: #d3423e;
+}
+.hljs-symbol {
+  fill: #82aaff;
+}
+.hljs-class {
+  fill: #ffcb8b;
+}
+.hljs-function {
+  fill: #82AAFF;
+}
+.hljs-title {
+  fill: #DCDCAA;
+  font-style: italic;
+}
+.hljs-params {
+  fill: #7fdbca;
+}
+
+/* Meta */
+.hljs-comment {
+  fill: #637777;
+  font-style: italic;
+}
+.hljs-doctag {
+  fill: #7fdbca;
+}
+.hljs-meta {
+  fill: #82aaff;
+}
+.hljs-meta .hljs-keyword {
+
+  fill: #82aaff;
+}
+.hljs-meta .hljs-string {
+  fill: #ecc48d;
+}
+
+/* Tags, attributes, config */
+.hljs-section {
+  fill: #82b1ff;
+}
+.hljs-tag,
+.hljs-name {
+  fill: #7fdbca;
+}
+.hljs-attr {
+  fill: #7fdbca;
+}
+.hljs-attribute {
+  fill: #80cbc4;
+}
+.hljs-variable {
+  fill: #addb67;
+}
+
+/* Markup */
+.hljs-bullet {
+  fill: #d9f5dd;
+}
+.hljs-code {
+  fill: #80CBC4;
+}
+.hljs-emphasis {
+  fill: #c792ea;
+  font-style: italic;
+}
+.hljs-strong {
+  fill: #addb67;
+  font-weight: bold;
+}
+.hljs-formula {
+  fill: #c792ea;
+}
+.hljs-link {
+  fill: #ff869a;
+}
+.hljs-quote {
+  fill: #697098;
+  font-style: italic;
+}
+
+/* CSS */
+.hljs-selector-tag {
+  fill: #ff6363;
+}
+
+.hljs-selector-id {
+  fill: #fad430;
+}
+
+.hljs-selector-class {
+  fill: #addb67;
+  font-style: italic;
+}
+
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  fill: #c792ea;
+  font-style: italic;
+}
+
+/* Templates */
+.hljs-template-tag {
+  fill: #c792ea;
+}
+.hljs-template-variable {
+  fill: #addb67;
+}
+
+/* diff */
+.hljs-addition {
+  fill: #addb67ff;
+  font-style: italic;
+}
+
+.hljs-deletion {
+  fill: #EF535090;
+  font-style: italic;
+}

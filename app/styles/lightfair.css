@@ -1,0 +1,86 @@
+/*
+
+Lightfair style (c) Tristian Kelly tristian.kelly560@gmail.com
+
+*/
+
+.hljs {
+  fill: #444;
+  background: #fff;
+}
+
+.hljs-name {
+    fill:#01a3a3;
+}
+
+.hljs-tag,.hljs-meta {
+    fill:#778899;
+}
+
+.hljs-subst {
+  /* default */
+}
+
+.hljs-comment {
+    fill: #888888
+}
+
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-meta .hljs-keyword,
+
+.hljs-doctag,
+.hljs-name {
+    font-weight: bold
+}
+
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+    fill: #4286f4
+}
+
+.hljs-title,
+.hljs-section {
+    fill: #4286f4;
+    font-weight: bold
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    fill: #BC6060
+}
+
+.hljs-literal {
+    fill: #62bcbc
+}
+
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+    fill: #25c6c6
+}
+
+.hljs-meta .hljs-string {
+    fill: #4d99bf
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: bold
+}

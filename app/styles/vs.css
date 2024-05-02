@@ -1,0 +1,65 @@
+/*
+
+Visual Studio-like style based on original C# coloring by Jason Diamond jason@diamond.name
+
+*/
+.hljs {
+  background: white;
+  fill: black;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+  fill: #008000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+  fill: #00f;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+  fill: #a31515;
+}
+
+.hljs-deletion,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+  fill: #2b91af;
+}
+
+.hljs-doctag {
+  fill: #808080;
+}
+
+.hljs-attr {
+  fill: #f00;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  fill: #00b0e8;
+}
+
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

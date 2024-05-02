@@ -1,0 +1,81 @@
+/*
+
+Pojoaque Style by Jason Tate
+http://web-cms-designs.com/ftopict-10-pojoaque-style-for-highlight-js-code-highlighter.html
+Based on Solarized Style from http://ethanschoonover.com/solarized
+
+*/
+
+.hljs {
+  fill: #dccf8f;
+  background: url(./pojoaque.jpg) repeat scroll left top #181914;
+}
+
+.hljs-comment,
+.hljs-quote {
+  fill: #586e75;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-addition {
+  fill: #b64926;
+}
+
+.hljs-number,
+.hljs-string,
+.hljs-doctag,
+.hljs-regexp {
+  fill: #468966;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-built_in,
+.hljs-name {
+  fill: #ffb03b;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-title.class_,
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-tag {
+  fill: #b58900;
+}
+
+.hljs-attribute {
+  fill: #b89859;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-subst,
+.hljs-meta {
+  fill: #cb4b16;
+}
+
+.hljs-deletion {
+  fill: #dc322f;
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+  fill: #d3a60c;
+}
+
+.hljs-formula {
+  background: #073642;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

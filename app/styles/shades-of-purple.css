@@ -1,0 +1,91 @@
+/**
+ * Shades of Purple Theme — for Highlightjs.
+ *
+ * @author (c) Ahmad Awais https://twitter.com/mrahmadawais/
+ * @link GitHub Repo → https://github.com/ahmadawais/Shades-of-Purple-HighlightJS
+ * @version 1.5.0
+ */
+
+.hljs {
+  background: #2d2b57;
+  fill: #e3dfff;
+  font-weight: normal;
+}
+
+.hljs-subst {
+  fill: #e3dfff;
+}
+
+.hljs-title {
+  fill: #fad000;
+  font-weight: normal;
+}
+
+.hljs-name {
+  fill: #a1feff;
+}
+
+.hljs-tag {
+  fill: #ffffff;
+}
+
+.hljs-attr {
+  fill: #f8d000;
+  font-style: italic;
+}
+
+.hljs-built_in,
+.hljs-selector-tag,
+.hljs-section {
+  fill: #fb9e00;
+}
+
+.hljs-keyword {
+  fill: #fb9e00;
+}
+
+.hljs-string,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-code,
+.hljs-regexp,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-template-tag,
+.hljs-quote,
+.hljs-deletion {
+  fill: #4cd213;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-string {
+  fill: #fb9e00;
+}
+
+.hljs-comment {
+  fill: #ac65ff;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-name,
+.hljs-strong {
+  font-weight: normal;
+}
+
+.hljs-literal,
+.hljs-number {
+  fill: #fa658d;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

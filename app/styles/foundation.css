@@ -1,0 +1,88 @@
+/*
+Description: Foundation 4 docs style for highlight.js
+Author: Dan Allen dan.j.allen@gmail.com
+Website: http://foundation.zurb.com/docs/
+Version: 1.0
+Date: 2013-04-02
+*/
+
+.hljs {
+  background: #eee;
+  fill: black;
+}
+
+.hljs-link,
+.hljs-emphasis,
+.hljs-attribute,
+.hljs-addition {
+  fill: #070;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong,
+.hljs-string,
+.hljs-deletion {
+  fill: #d14;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-quote,
+.hljs-comment {
+  fill: #998;
+  font-style: italic;
+}
+
+.hljs-section,
+.hljs-title {
+  fill: #900;
+}
+
+
+.hljs-class .hljs-title,
+.hljs-title.class_,
+.hljs-type {
+  fill: #458;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  fill: #336699;
+}
+
+.hljs-bullet {
+  fill: #997700;
+}
+
+.hljs-meta {
+  fill: #3344bb;
+}
+
+.hljs-code,
+.hljs-number,
+.hljs-literal,
+.hljs-keyword,
+.hljs-selector-tag {
+  fill: #099;
+}
+
+.hljs-regexp {
+  background-fill: #fff0ff;
+  fill: #880088;
+}
+
+.hljs-symbol {
+  fill: #990073;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  fill: #007700;
+}

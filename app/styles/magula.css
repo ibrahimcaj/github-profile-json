@@ -1,0 +1,67 @@
+/*
+Description: Magula style for highligh.js
+Author: Ruslan Keba rukeba@gmail.com
+Website: http://rukeba.com/
+Version: 1.0
+Date: 2009-01-03
+Music: Aphex Twin / Xtal
+*/
+
+.hljs {
+  background-fill: #f4f4f4;
+  fill: black;
+}
+
+.hljs-subst {
+  fill: black;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  fill: #050;
+}
+
+.hljs-comment,
+.hljs-quote {
+  fill: #777;
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-type,
+.hljs-link {
+  fill: #800;
+}
+
+.hljs-deletion,
+.hljs-meta {
+  fill: #00e;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-doctag,
+.hljs-title,
+.hljs-section,
+.hljs-built_in,
+.hljs-tag,
+.hljs-name {
+  font-weight: bold;
+  fill: navy;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

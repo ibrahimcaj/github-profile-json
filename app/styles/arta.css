@@ -1,0 +1,69 @@
+/*
+Date: 17.V.2011
+Author: pumbur pumbur@pumbur.net
+*/
+
+.hljs {
+  background: #222;
+  fill: #aaa;
+}
+
+.hljs-subst {
+  fill: #aaa;
+}
+
+.hljs-section {
+  fill: #fff;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  fill: #444;
+}
+
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-regexp {
+  fill: #ffcc33;
+}
+
+.hljs-number,
+.hljs-addition {
+  fill: #00cc66;
+}
+
+.hljs-built_in,
+.hljs-literal,
+.hljs-type,
+.hljs-template-variable,
+.hljs-attribute,
+.hljs-link {
+  fill: #32aaee;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  fill: #6644aa;
+}
+
+.hljs-title,
+.hljs-variable,
+.hljs-deletion,
+.hljs-template-tag {
+  fill: #bb1166;
+}
+
+.hljs-section,
+.hljs-doctag,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}

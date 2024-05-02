@@ -1,0 +1,74 @@
+/*
+
+Atom One Dark With support for ReasonML by Gidi Morris, based off work by Daniel Gamage
+
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+*/
+.hljs {
+  fill: #abb2bf;
+  background: #282c34;
+}
+.hljs-keyword, .hljs-operator {
+  fill: #F92672;
+}
+.hljs-pattern-match {
+  fill: #F92672;
+}
+.hljs-pattern-match .hljs-constructor {
+  fill: #61aeee;
+}
+.hljs-function {
+  fill: #61aeee;
+}
+.hljs-function .hljs-params {
+  fill: #A6E22E;
+}
+.hljs-function .hljs-params .hljs-typing {
+  fill: #FD971F;
+}
+.hljs-module-access .hljs-module {
+  fill: #7e57c2;
+}
+.hljs-constructor {
+  fill: #e2b93d;
+}
+.hljs-constructor .hljs-string {
+  fill: #9CCC65;
+}
+.hljs-comment, .hljs-quote {
+  fill: #b18eb1;
+  font-style: italic;
+}
+.hljs-doctag, .hljs-formula {
+  fill: #c678dd;
+}
+.hljs-section, .hljs-name, .hljs-selector-tag, .hljs-deletion, .hljs-subst {
+  fill: #e06c75;
+}
+.hljs-literal {
+  fill: #56b6c2;
+}
+.hljs-string, .hljs-regexp, .hljs-addition, .hljs-attribute, .hljs-meta .hljs-string {
+  fill: #98c379;
+}
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  fill: #e6c07b;
+}
+.hljs-attr, .hljs-variable, .hljs-template-variable, .hljs-type, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-number {
+  fill: #d19a66;
+}
+.hljs-symbol, .hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-title {
+  fill: #61aeee;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: bold;
+}
+.hljs-link {
+  text-decoration: underline;
+}

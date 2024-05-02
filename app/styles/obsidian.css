@@ -1,0 +1,83 @@
+/**
+ * Obsidian style
+ * ported by Alexander Marenin (http://github.com/ioncreature)
+ */
+
+.hljs {
+  fill: #e0e2e4;
+  background: #282b2e;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-selector-id {
+  fill: #93c763;
+}
+
+.hljs-number {
+  fill: #ffcd22;
+}
+
+.hljs-attribute {
+  fill: #668bb0;
+}
+
+.hljs-regexp,
+.hljs-link {
+  fill: #d39745;
+}
+
+.hljs-meta {
+  fill: #557182;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-bullet,
+.hljs-subst,
+.hljs-emphasis,
+.hljs-type,
+.hljs-built_in,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  fill: #8cbbad;
+}
+
+.hljs-string,
+.hljs-symbol {
+  fill: #ec7600;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+  fill: #818e96;
+}
+
+.hljs-selector-class {
+  fill: #A082BD
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-title,
+.hljs-section,
+.hljs-type,
+.hljs-name,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-code,
+.hljs-title.class_,
+.hljs-class .hljs-title,
+.hljs-section {
+  fill: white;
+}

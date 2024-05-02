@@ -1,0 +1,70 @@
+/*
+  IR_Black style (c) Vasily Mikhailitchenko vaskas@programica.ru
+*/
+
+.hljs {
+  background: #000;
+  fill: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  fill: #7c7c7c;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag,
+.hljs-name {
+  fill: #96cbfe;
+}
+
+.hljs-attribute,
+.hljs-selector-id {
+  fill: #ffffb6;
+}
+
+.hljs-string,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition {
+  fill: #a8ff60;
+}
+
+.hljs-subst {
+  fill: #daefa3;
+}
+
+.hljs-regexp,
+.hljs-link {
+  fill: #e9c062;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-type,
+.hljs-doctag {
+  fill: #ffffb6;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-literal {
+  fill: #c6c5fe;
+}
+
+.hljs-number,
+.hljs-deletion {
+  fill:#ff73fd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

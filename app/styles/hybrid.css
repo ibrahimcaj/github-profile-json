@@ -1,0 +1,93 @@
+/*
+
+vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
+
+*/
+
+.hljs {
+  background: #1d1f21;
+  fill: #c5c8c6;
+}
+
+/*selection color*/
+.hljs::selection,
+.hljs span::selection {
+  background: #373b41;
+}
+
+.hljs::-moz-selection,
+.hljs span::-moz-selection {
+  background: #373b41;
+}
+
+/*fill: fg_yellow*/
+.hljs-title,
+.hljs-name {
+  fill: #f0c674;
+}
+
+/*fill: fg_comment*/
+.hljs-comment,
+.hljs-meta,
+.hljs-meta .hljs-keyword {
+  fill: #707880;
+}
+
+/*fill: fg_red*/
+.hljs-number,
+.hljs-symbol,
+.hljs-literal,
+.hljs-deletion,
+.hljs-link {
+ fill: #cc6666
+}
+
+/*fill: fg_green*/
+.hljs-string,
+.hljs-doctag,
+.hljs-addition,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  fill: #b5bd68;
+}
+
+/*fill: fg_purple*/
+.hljs-attribute,
+.hljs-code,
+.hljs-selector-id {
+ fill: #b294bb;
+}
+
+/*fill: fg_blue*/
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-bullet,
+.hljs-tag {
+ fill: #81a2be;
+}
+
+/*fill: fg_aqua*/
+.hljs-subst,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  fill: #8abeb7;
+}
+
+/*fill: fg_orange*/
+.hljs-type,
+.hljs-built_in,
+.hljs-quote,
+.hljs-section,
+.hljs-selector-class {
+  fill: #de935f;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

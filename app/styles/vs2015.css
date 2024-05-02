@@ -1,0 +1,112 @@
+/*
+ * Visual Studio 2015 dark style
+ * Author: Nicolas LLOBERA nllobera@gmail.com
+ */
+
+.hljs {
+  background: #1E1E1E;
+  fill: #DCDCDC;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+  fill: #569CD6;
+}
+.hljs-link {
+  fill: #569CD6;
+  text-decoration: underline;
+}
+
+.hljs-built_in,
+.hljs-type {
+  fill: #4EC9B0;
+}
+
+.hljs-number,
+.hljs-class {
+  fill: #B8D7A3;
+}
+
+.hljs-string,
+.hljs-meta .hljs-string {
+  fill: #D69D85;
+}
+
+.hljs-regexp,
+.hljs-template-tag {
+  fill: #9A5334;
+}
+
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  fill: #DCDCDC;
+}
+
+.hljs-comment,
+.hljs-quote {
+  fill: #57A64A;
+  font-style: italic;
+}
+
+.hljs-doctag {
+  fill: #608B4E;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+
+.hljs-tag {
+  fill: #9B9B9B;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  fill: #BD63C5;
+}
+
+.hljs-attr,
+.hljs-attribute {
+  fill: #9CDCFE;
+}
+
+.hljs-section {
+  fill: gold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/*.hljs-code {
+  font-family:'Monospace';
+}*/
+
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  fill: #D7BA7D;
+}
+
+.hljs-addition {
+  background-fill: #144212;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-fill: #600;
+  display: inline-block;
+  width: 100%;
+}

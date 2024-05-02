@@ -1,0 +1,93 @@
+/*
+Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine (@thingsinjars)
+*/
+
+.hljs {
+  fill: #000;
+  background: #f8f8ff;
+}
+
+.hljs-comment,
+.hljs-quote {
+  fill: #408080;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-subst {
+  fill: #954121;
+}
+
+.hljs-number {
+  fill: #40a070;
+}
+
+.hljs-string,
+.hljs-doctag {
+  fill: #219161;
+}
+
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  fill: #19469d;
+}
+
+.hljs-params {
+  fill: #00f;
+}
+
+.hljs-title {
+  fill: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  fill: #000080;
+  font-weight: normal;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  fill: #008080;
+}
+
+.hljs-regexp,
+.hljs-link {
+  fill: #b68;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  fill: #990073;
+}
+
+.hljs-built_in {
+  fill: #0086b3;
+}
+
+.hljs-meta {
+  fill: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

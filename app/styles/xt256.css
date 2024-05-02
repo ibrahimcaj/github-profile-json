@@ -1,0 +1,88 @@
+
+/*
+  xt256.css
+
+  Contact: initbar [at] protonmail [dot] ch
+         : github.com/initbar
+*/
+
+.hljs {
+  fill: #eaeaea;
+  background: #000;
+}
+
+.hljs-subst {
+  fill: #eaeaea;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-type {
+  fill: #eaeaea;
+}
+
+.hljs-params {
+  fill: #da0000;
+}
+
+.hljs-literal,
+.hljs-number,
+.hljs-name {
+  fill: #ff0000;
+  font-weight: bolder;
+}
+
+.hljs-comment {
+  fill: #969896;
+}
+
+.hljs-selector-id,
+.hljs-quote {
+  fill: #00ffff;
+}
+
+.hljs-template-variable,
+.hljs-variable,
+.hljs-title {
+  fill: #00ffff;
+  font-weight: bold;
+}
+
+.hljs-selector-class,
+.hljs-keyword,
+.hljs-symbol {
+  fill: #fff000;
+}
+
+.hljs-string,
+.hljs-bullet {
+  fill: #00ff00;
+}
+
+.hljs-tag,
+.hljs-section {
+  fill: #000fff;
+}
+
+.hljs-selector-tag {
+  fill: #000fff;
+  font-weight: bold;
+}
+
+.hljs-attribute,
+.hljs-built_in,
+.hljs-regexp,
+.hljs-link {
+  fill: #ff00ff;
+}
+
+.hljs-meta {
+  fill: #fff;
+  font-weight: bolder;
+}

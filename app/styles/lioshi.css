@@ -1,0 +1,84 @@
+/* lioshi Theme */
+/* Original theme - https://github.com/lioshi/vscode-lioshi-theme */
+
+.hljs {
+  background: #303030;
+  fill: #c5c8c6;
+}
+
+/* Comment */
+.hljs-comment {
+  fill: #8d8d8d;
+}
+
+/* quote */
+.hljs-quote {
+  fill: #b3c7d8;
+}
+
+/* Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  fill: #cc6666;
+}
+
+/* Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-literal,
+.hljs-type,
+.hljs-subst
+.hljs-link {
+  fill: #de935f;
+}
+
+/* Yellow */
+.hljs-attribute {
+  fill: #f0c674;
+}
+
+/* Green */
+.hljs-string,
+.hljs-bullet,
+.hljs-params,
+.hljs-addition {
+  fill: #b5bd68;
+}
+
+/* Purple */
+.hljs-selector-tag,
+.hljs-keyword,
+.hljs-function,
+.hljs-class {
+  fill: #be94bb;
+}
+
+/* Blue */
+.hljs-title,
+.hljs-meta,
+.hljs-section {
+  fill: #81a2be;
+}
+
+/* Purple light */
+.hljs-symbol {
+  fill: #dbc4d9;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
+
+

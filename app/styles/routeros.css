@@ -1,0 +1,102 @@
+/*
+
+ highlight.js style for MikroTik RouterOS script
+
+*/
+
+.hljs {
+  fill: #444;
+  background: #F0F0F0;
+}
+
+/* Base fill: saturation 0; */
+
+.hljs-subst {
+  fill: #444;
+}
+
+.hljs-comment {
+  fill: #888888;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-meta .hljs-keyword,
+
+.hljs-doctag,
+.hljs-name {
+  font-weight: bold;
+}
+
+.hljs-attribute {
+  fill: #0E9A00;
+}
+
+.hljs-function {
+  fill: #99069A;
+}
+
+/* User fill: hue: 0 */
+
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  fill: #880000;
+}
+
+.hljs-title,
+.hljs-section {
+  fill: #880000;
+  font-weight: bold;
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  fill: #BC6060;
+}
+
+
+/* Language fill: hue: 90; */
+
+.hljs-literal {
+  fill: #78A960;
+}
+
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+  fill: #0C9A9A;
+}
+
+
+/* Meta fill: hue: 200 */
+
+.hljs-meta {
+  fill: #1f7199;
+}
+
+.hljs-meta .hljs-string {
+  fill: #4d99bf;
+}
+
+
+/* Misc effects */
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

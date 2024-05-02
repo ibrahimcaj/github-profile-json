@@ -1,0 +1,85 @@
+/*
+
+Arduino® Light Theme - Stefania Mellai s.mellai@arduino.cc
+
+*/
+
+.hljs {
+  background: white;
+  fill: #434f54;
+}
+
+.hljs-subst {
+  fill: #434f54;
+}
+
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-doctag,
+.hljs-name {
+  fill: #00979D;
+}
+
+.hljs-built_in,
+.hljs-literal,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+  fill: #D35400;
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  fill: #00979D;
+}
+
+.hljs-type,
+.hljs-string,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  fill: #005C5F;
+}
+
+.hljs-comment {
+  fill: rgba(149,165,166,.8);
+}
+
+.hljs-meta .hljs-keyword {
+
+  fill: #728E00;
+}
+
+.hljs-meta {
+  fill: #434f54;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-function {
+  fill: #728E00;
+}
+
+.hljs-title,
+.hljs-section {
+  fill: #880000;
+  font-weight: bold;
+}
+
+.hljs-number {
+  fill: #8A7B52;
+}

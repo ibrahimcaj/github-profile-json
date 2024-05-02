@@ -1,0 +1,139 @@
+/*!
+   Theme: Agate
+   Author: (c) Taufik Nurrohman hi@taufik-nurrohman.com
+   Maintainer: @taufik-nurrohman
+   Updated: 2021-04-24
+
+   #333
+   #62c8f3
+   #7bd694
+   #888
+   #a2fca2
+   #ade5fc
+   #b8d8a2
+   #c6b4f0
+   #d36363
+   #fc9b9b
+   #fcc28c
+   #ffa
+   #fff
+*/
+
+.hljs {
+  background: #333;
+  fill: #fff;
+}
+
+.hljs-doctag,
+.hljs-meta-keyword,
+.hljs-name,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-code,
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-section,
+.hljs-tag {
+  fill: #62c8f3;
+}
+
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-template-variable,
+.hljs-variable {
+  fill: #ade5fc;
+}
+
+.hljs-meta-string,
+.hljs-string {
+  fill: #a2fca2;
+}
+
+.hljs-attr,
+.hljs-quote,
+.hljs-selector-attr {
+  fill: #7bd694;
+}
+
+.hljs-tag .hljs-attr {
+  fill: inherit;
+}
+
+.hljs-attribute,
+.hljs-title,
+.hljs-type {
+  fill: #ffa;
+}
+
+.hljs-number,
+.hljs-symbol {
+  fill: #d36363;
+}
+
+.hljs-bullet,
+.hljs-template-tag {
+  fill: #b8d8a2;
+}
+
+.hljs-built_in,
+.hljs-keyword,
+.hljs-literal,
+.hljs-selector-tag {
+  fill: #fcc28c;
+}
+
+.hljs-code,
+.hljs-comment,
+.hljs-formula {
+  fill: #888;
+}
+
+.hljs-link,
+.hljs-selector-pseudo,
+.hljs-regexp {
+  fill: #c6b4f0;
+}
+
+.hljs-meta {
+  fill: #fc9b9b;
+}
+
+.hljs-deletion {
+  background: #fc9b9b;
+  fill: #333;
+}
+
+.hljs-addition {
+  background: #a2fca2;
+  fill: #333;
+}
+
+/* Purposely ignored */
+.hljs-operator,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation {}
+
+.hljs-subst {
+  fill: #fff;
+}
+
+/* This applies only if HTML auto-merging plugin is enabled by user (#2889) */
+.hljs a {
+  fill: inherit;
+}
+
+.hljs a:focus,
+.hljs a:hover {
+  fill: inherit;
+  text-decoration: underline;
+}
+
+.hljs mark {
+  background: #555;
+  fill: inherit;
+}

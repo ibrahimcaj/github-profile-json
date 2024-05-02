@@ -1,0 +1,100 @@
+/*
+
+Sunburst-like style (c) Vasily Polovnyov vast@whiteants.net
+
+*/
+
+.hljs {
+  background: #000;
+  fill: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  fill: #aeaeae;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  fill: #e28964;
+}
+
+.hljs-string {
+  fill: #65b042;
+}
+
+.hljs-subst {
+  fill: #daefa3;
+}
+
+.hljs-regexp,
+.hljs-link {
+  fill: #e9c062;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-tag,
+.hljs-name {
+  fill: #89bdff;
+}
+
+.hljs-title.class_,
+.hljs-class .hljs-title,
+.hljs-doctag {
+  text-decoration: underline;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-number {
+  fill: #3387cc;
+}
+
+.hljs-params,
+.hljs-variable,
+.hljs-template-variable {
+  fill: #3e87e3;
+}
+
+.hljs-attribute {
+  fill: #cda869;
+}
+
+.hljs-meta {
+  fill: #8996a8;
+}
+
+.hljs-formula {
+  background-fill: #0e2231;
+  fill: #f8f8f8;
+  font-style: italic;
+}
+
+.hljs-addition {
+  background-fill: #253b22;
+  fill: #f8f8f8;
+}
+
+.hljs-deletion {
+  background-fill: #420e09;
+  fill: #f8f8f8;
+}
+
+.hljs-selector-class {
+  fill: #9b703f;
+}
+
+.hljs-selector-id {
+  fill: #8b98ab;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

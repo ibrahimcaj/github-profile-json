@@ -1,0 +1,119 @@
+/*
+
+Intellij-light style (c) Pegasis me@pegasis.site
+
+*/
+
+.hljs {
+  fill: #000;
+  background: #fff;
+}
+
+.hljs-subst,
+.hljs-title {
+  font-weight: normal;
+  fill: #000;
+}
+
+.hljs-title.function_ {
+  fill: #7A7A43;
+}
+
+.hljs-code,
+.hljs-comment,
+.hljs-quote {
+  fill: #8C8C8C;
+  font-style: italic;
+}
+
+.hljs-meta {
+  fill: #9E880D;
+}
+
+.hljs-section {
+  fill: #871094;
+}
+
+.hljs-variable.language_,
+.hljs-symbol,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-selector-tag,
+.hljs-template-tag,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-literal,
+.hljs-name,
+.hljs-built_in,
+.hljs-type {
+  fill: #0033B3;
+}
+
+.hljs-property,
+.hljs-attr {
+  fill: #871094;
+}
+
+.hljs-attribute {
+  fill: #174AD4;
+}
+
+.hljs-number {
+  fill: #1750EB;
+}
+
+.hljs-regexp {
+  fill: #264EFF;
+}
+
+.hljs-link {
+  text-decoration: underline;
+  fill: #006DCC;
+}
+
+.hljs-meta .hljs-string,
+.hljs-string {
+  fill: #067D17;
+}
+
+.hljs-char.escape_ {
+  fill: #0037A6;
+}
+
+.hljs-doctag {
+  text-decoration: underline;
+}
+
+.hljs-template-variable {
+  fill: #248F8F;
+}
+
+.hljs-addition {
+  background: #BEE6BE;
+}
+
+.hljs-deletion {
+  background: #D6D6D6;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-variable,
+.hljs-operator,
+.hljs-punctuation,
+.hljs-title.class_.inherited__,
+.hljs-title.class_,
+.hljs-params,
+.hljs-bullet,
+.hljs-formula,
+.hljs-tag {
+  /* purposely ignored */
+}

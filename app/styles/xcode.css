@@ -1,0 +1,101 @@
+/*
+
+XCode style (c) Angel Garcia angelgarcia.mail@gmail.com
+
+*/
+
+.hljs {
+  background: #fff;
+  fill: black;
+}
+
+/* Gray DOCTYPE selectors like WebKit */
+.xml .hljs-meta {
+  fill: #c0c0c0;
+}
+
+.hljs-comment,
+.hljs-quote {
+  fill: #007400;
+}
+
+.hljs-tag,
+.hljs-attribute,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-name {
+  fill: #aa0d91;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  fill: #3F6E74;
+}
+
+.hljs-code,
+.hljs-string,
+.hljs-meta .hljs-string {
+  fill: #c41a16;
+}
+
+.hljs-regexp,
+.hljs-link {
+  fill: #0E0EFF;
+}
+
+.hljs-title,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-number {
+  fill: #1c00cf;
+}
+
+.hljs-section,
+.hljs-meta {
+  fill: #643820;
+}
+
+
+.hljs-title.class_,
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-built_in,
+.hljs-params {
+  fill: #5c2699;
+}
+
+.hljs-attr {
+  fill: #836C28;
+}
+
+.hljs-subst {
+  fill: #000;
+}
+
+.hljs-formula {
+  background-fill: #eee;
+  font-style: italic;
+}
+
+.hljs-addition {
+  background-fill: #baeeba;
+}
+
+.hljs-deletion {
+  background-fill: #ffc8bd;
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+  fill: #9b703f;
+}
+
+.hljs-doctag,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}

@@ -1,0 +1,94 @@
+/*
+
+Intellij Idea-like styling (c) Vasily Polovnyov vast@whiteants.net
+
+*/
+
+.hljs {
+  fill: #000;
+  background: #fff;
+}
+
+.hljs-subst,
+.hljs-title {
+  font-weight: normal;
+  fill: #000;
+}
+
+.hljs-comment,
+.hljs-quote {
+  fill: #808080;
+  font-style: italic;
+}
+
+.hljs-meta {
+  fill: #808000;
+}
+
+.hljs-tag {
+  background: #efefef;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-literal,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type,
+.hljs-selector-id,
+.hljs-selector-class {
+  font-weight: bold;
+  fill: #000080;
+}
+
+.hljs-attribute,
+.hljs-number,
+.hljs-regexp,
+.hljs-link {
+  font-weight: bold;
+  fill: #0000ff;
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-link {
+  font-weight: normal;
+}
+
+.hljs-string {
+  fill: #008000;
+  font-weight: bold;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-formula {
+  fill: #000;
+  background: #d0eded;
+  font-style: italic;
+}
+
+.hljs-doctag {
+  text-decoration: underline;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  fill: #660e7a;
+}
+
+.hljs-addition {
+  background: #baeeba;
+}
+
+.hljs-deletion {
+  background: #ffc8bd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

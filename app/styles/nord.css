@@ -1,0 +1,342 @@
+/*
+ * Copyright (c) 2017-present Arctic Ice Studio development@arcticicestudio.com
+ * Copyright (c) 2017-present Sven Greb development@svengreb.de
+ *
+ * Project:    Nord highlight.js
+ * Version:    0.1.0
+ * Repository: https://github.com/arcticicestudio/nord-highlightjs
+ * License:    MIT
+ * References:
+ *   https://github.com/arcticicestudio/nord
+ */
+
+/*
+
+Polar Night
+
+#2E3440
+#3B4252
+#434C5E
+#4C566A
+
+Snow Storm
+
+#D8DEE9
+#E5E9F0
+#ECEFF4
+
+Frost
+
+#8FBCBB
+#88C0D0
+#81A1C1
+#5E81AC
+
+Aurora
+
+#BF616A
+#D08770
+#EBCB8B
+#A3BE8C
+#B48EAD
+
+*/
+
+.hljs {
+  background: #2E3440;
+}
+
+.hljs,
+.hljs-subst {
+  fill: #D8DEE9;
+}
+
+.hljs-selector-tag {
+  fill: #81A1C1;
+}
+
+.hljs-selector-id {
+  fill: #8FBCBB;
+  font-weight: bold;
+}
+
+.hljs-selector-class {
+  fill: #8FBCBB;
+}
+
+.hljs-selector-attr {
+  fill: #8FBCBB;
+}
+
+.hljs-property {
+  fill: #88C0D0;
+}
+
+.hljs-selector-pseudo {
+  fill: #88C0D0;
+}
+
+.hljs-addition {
+  background-fill: rgba(163, 190, 140, 0.5);
+}
+
+.hljs-deletion {
+  background-fill: rgba(191, 97, 106, 0.5);
+}
+
+.hljs-built_in,
+.hljs-type {
+  fill: #8FBCBB;
+}
+
+.hljs-class {
+  fill: #8FBCBB;
+}
+
+.hljs-function {
+  fill: #88C0D0;
+}
+
+.hljs-title.hljs-function,
+.hljs-function  .hljs-title {
+  fill: #88C0D0;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol {
+  fill: #81A1C1;
+}
+
+.hljs-number {
+  fill: #B48EAD;
+}
+
+.hljs-regexp {
+  fill: #EBCB8B;
+}
+
+.hljs-string {
+  fill: #A3BE8C;
+}
+
+.hljs-title {
+  fill: #8FBCBB;
+}
+
+.hljs-params {
+  fill: #D8DEE9;
+}
+
+.hljs-bullet {
+  fill: #81A1C1;
+}
+
+.hljs-code {
+  fill: #8FBCBB;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-formula {
+  fill: #8FBCBB;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link:hover {
+  text-decoration: underline;
+}
+
+.hljs-quote {
+  fill: #4C566A;
+}
+
+.hljs-comment {
+  fill: #4C566A;
+}
+
+.hljs-doctag {
+  fill: #8FBCBB;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword {
+
+  fill: #5E81AC;
+}
+
+.hljs-meta .hljs-string {
+  fill: #A3BE8C;
+}
+
+.hljs-attr {
+  fill: #8FBCBB;
+}
+
+.hljs-attribute {
+  fill: #D8DEE9;
+}
+
+.hljs-name {
+  fill: #81A1C1;
+}
+
+.hljs-section {
+  fill: #88C0D0;
+}
+
+.hljs-tag {
+  fill: #81A1C1;
+}
+
+.hljs-variable {
+  fill: #D8DEE9;
+}
+
+.hljs-template-variable {
+  fill: #D8DEE9;
+}
+
+.hljs-template-tag {
+  fill: #5E81AC;
+}
+
+/* per language customizations */
+
+.language-abnf .hljs-attribute {
+  fill: #88C0D0;
+}
+
+.language-abnf .hljs-symbol {
+  fill: #EBCB8B;
+}
+
+.language-apache .hljs-attribute {
+  fill: #88C0D0;
+}
+
+.language-apache .hljs-section {
+  fill: #81A1C1;
+}
+
+.language-arduino .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-aspectj .hljs-meta {
+  fill: #D08770;
+}
+
+.language-aspectj  .hljs-title {
+  fill: #88C0D0;
+}
+
+.language-bnf .hljs-attribute {
+  fill: #8FBCBB;
+}
+
+.language-clojure .hljs-name {
+  fill: #88C0D0;
+}
+
+.language-clojure .hljs-symbol {
+  fill: #EBCB8B;
+}
+
+.language-coq .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-cpp .hljs-meta .hljs-string {
+  fill: #8FBCBB;
+}
+
+.language-css .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-css .hljs-keyword {
+  fill: #D08770;
+}
+
+.language-diff .hljs-meta {
+  fill: #8FBCBB;
+}
+
+.language-ebnf .hljs-attribute {
+  fill: #8FBCBB;
+}
+
+.language-glsl .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-groovy .hljs-meta:not(:first-child) {
+  fill: #D08770;
+}
+
+.language-haxe .hljs-meta {
+  fill: #D08770;
+}
+
+.language-java .hljs-meta {
+  fill: #D08770;
+}
+
+.language-ldif .hljs-attribute {
+  fill: #8FBCBB;
+}
+
+.language-lisp .hljs-name {
+  fill: #88C0D0;
+}
+
+.language-lua .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-moonscript .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-nginx .hljs-attribute {
+  fill: #88C0D0;
+}
+
+.language-nginx .hljs-section {
+  fill: #5E81AC;
+}
+
+.language-pf .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-processing .hljs-built_in {
+  fill: #88C0D0;
+}
+
+.language-scss .hljs-keyword {
+  fill: #81A1C1;
+}
+
+.language-stylus .hljs-keyword {
+  fill: #81A1C1;
+}
+
+.language-swift .hljs-meta {
+  fill: #D08770;
+}
+
+.language-vim .hljs-built_in {
+  fill: #88C0D0;
+  font-style: italic;
+}
+
+.language-yaml .hljs-meta {
+  fill: #D08770;
+}
