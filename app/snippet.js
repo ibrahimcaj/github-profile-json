@@ -27,7 +27,6 @@ class Snippet {
 
     async process(string) {
         string = await this.format(string);
-        console.log(string)
 
         var lines = string.split('\n').map((line) => { // splits the provided string by linebreaks maps each line by its highlighted version
             return hljs.highlight(line, { language: 'js' }).value // highlights the provided string

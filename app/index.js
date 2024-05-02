@@ -1,5 +1,6 @@
 
 const express = require('express');
+const serverless = require('serverless-http');
 const fs = require('fs');
 
 const Snippet = require('./snippet');
@@ -21,6 +22,7 @@ var string = `var ibrahim = {
 
 // initializes the app
 const app = express();
+app.use('/.netlify/functions/server', router);  // path must route to lambda
 
 app.get('/', async (request, response) => {
     // creates a new snippet object
@@ -65,4 +67,5 @@ app.get('/', async (request, response) => {
     `);
 });
 
-app.listen(4040); // im all ears 👂
+// app.listen(4040); // im all ears 👂
+module.exports.handler = serverless(app);
