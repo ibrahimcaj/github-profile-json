@@ -23,6 +23,7 @@ var string = `var ibrahim = {
 // initializes the app
 const app = express();
 app.use('/.netlify/functions/server', router);  // path must route to lambda
+app.use('/', (request, response) => res.sendFile(path.join(__dirname, '../index.html')));
 
 app.get('/', async (request, response) => {
     // creates a new snippet object
