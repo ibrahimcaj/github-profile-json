@@ -1,29 +1,11 @@
 
 const express = require('express');
-const serverless = require('serverless-http');
 const fs = require('fs');
 
 const Snippet = require('./snippet');
 
-var string = `var ibrahim = {
-    firstName: 'Ibrahim',
-    email: 'ibrahimcajlakovic1@gmail.com',
-    age: 18,
-    skills: [
-      'react',
-      'flutter',
-      'mongodb'
-    ],
-    hobbies: [
-      'design',
-      'electronics'
-    ]
-  }`;
-
 // initializes the app
 const app = express();
-app.use('/.netlify/functions/server', router);  // path must route to lambda
-app.use('/', (request, response) => res.sendFile(path.join(__dirname, '../index.html')));
 
 app.get('/', async (request, response) => {
     // creates a new snippet object
@@ -68,5 +50,4 @@ app.get('/', async (request, response) => {
     `);
 });
 
-// app.listen(4040); // im all ears 👂
-module.exports.handler = serverless(app);
+app.listen(4040); // im all ears 👂
