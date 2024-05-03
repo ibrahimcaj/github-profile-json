@@ -2,7 +2,7 @@ const hljs = require('highlight.js');
 const prettier = require('prettier');
 
 class Snippet {
-    constructor({ paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 2, fontSize = 12, indentSize = 2, theme = 'obsidian', background = false }) {
+    constructor({ paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, theme = 'obsidian', background = false }) {
         this.paddingX = parseInt(paddingX);
         this.paddingY = parseInt(paddingY ?? fontSize);
 
