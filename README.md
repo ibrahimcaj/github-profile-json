@@ -1,1 +1,1 @@
-# github-profile-snippet
+# github-profile-json

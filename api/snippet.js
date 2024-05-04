@@ -1,4 +1,7 @@
 const hljs = require('highlight.js');
+const fs = require('fs');
+const path = require('path');
+const Fonts = require('./fonts.json');
 
 class Snippet {
     constructor({ paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, theme = 'obsidian', background = false }) {
@@ -15,15 +18,14 @@ class Snippet {
         this.background = (background == 'true') ? true : false; // is there a better way of doing this???
     }
 
-    format(string) { // formats the provided string, just adding linebreaks - that's all
-        string = string.replace(/(\(|\[|\{)/g, '$1\n'); // linebreak after every opening bracket
-        string = string.replace(/,/g, ',\n'); // linebreak after every comma
-        string = string.replace(/(\)|\]|\})/g, '\n$1'); // linebreak before every closing bracket
+    format(string) { // formats the provided string
+        string = JSON.parse(string);
+        string = JSON.stringify(string, null, 4);
         
         return string;
     }
 
-    async process(string) {
+    async process(string) { // highlights the syntax of the provided string and applies the needed class names to each token
         string = await this.format(string);
 
         var lines = string.split('\n').map((line) => { // splits the provided string by linebreaks maps each line by its highlighted version
@@ -55,6 +57,50 @@ class Snippet {
         });
     
         return lines;
+    }
+
+    async render(object) { // takes in the object and then renders it as an svg
+        var result = await this.process(object); // processes the object
+        var height = result.length * this.lineHeight + this.paddingY + ((result.length - 1) * this.lineSpacing); // calculates the height of the svg
+        
+        return `
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 600 ${height}" font-family="Hack" class="${!this.background || 'hljs'}">
+                <style>
+                    /*!s
+                    *  Hack typeface https://github.com/source-foundry/Hack
+                    *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
+                    */
+                    /* FONT PATHS
+                        * -------------------------- */
+                    @font-face {
+                        font-family: 'Hack';
+                        src: url('${Fonts['hack-subset-woff2']}') format('woff2'),
+                            url('${Fonts['hack-subset-woff']}') format('woff');
+                        
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                    
+                    @font-face {
+                        font-family: 'Hack';
+                        src: url('${Fonts['hack-subset-italic-woff2']}') format('woff2'),
+                            url('${Fonts['hack-subset-italic-woff']}') format('woff');
+                        
+                            font-weight: 400;
+                        font-style: italic;
+                    }       
+
+                    * {
+                        font-size: ${this.fontSize};
+                        font-family: 'Hack';
+                    }
+
+                    ${fs.readFileSync(path.join(process.cwd(), `./api/styles/${this.theme}.css`)).toString()}
+                </style>
+
+                ${result.join('')}
+            </svg>
+        `;
     }
 }
 module.exports = Snippet;

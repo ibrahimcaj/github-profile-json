@@ -1,32 +1,41 @@
+const error = require("./error");
+
 module.exports = (request, response, next) => {
     if (request.path === "/") {
-        const invalidParams = Object.keys(request.query).filter((parameter) => {
-            const value = request.query[parameter];
-            const valueType = typeof value;
+        if (!request.query.object) return error(response, 400, `Object not provided.`); // if the object is not provided, return an error
 
-            function isNumber(value) { return !isNaN(parseInt(value)); }
+        try {
+            JSON.parse(request.query.object); // try to parse the object
 
-            switch (parameter) {
-                case 'paddingX':
-                    return !isNumber(parameter);
-                case 'paddingY':
-                    return !isNumber(parameter);
-                case 'lineHeight':
-                    return !isNumber(parameter);
-                case 'lineSpacing':
-                    return !isNumber(parameter);
-                case 'fontSize':
-                    return !isNumber(parameter);
-                case 'indentSize':
-                    return !isNumber(parameter);
-                case 'theme':
-                    return valueType !== 'string';
-                default:
-                    return false;
-            }
-        });
+            const invalidParams = Object.keys(request.query).filter((parameter) => {
+                const value = request.query[parameter];
 
-        if (invalidParams.length === 0) next(); // call the next middleware or route handler
-        else response.status(400).send(`Invalid parameter value: ${invalidParams.join(', ')}`);
-    } else response.status(404).send('Not found.');
+                var isNumber = (number) => { return !isNaN(parseInt(number)); }
+
+                switch (parameter) {
+                    case 'paddingX':
+                        return !isNumber(value);
+                    case 'paddingY':
+                        return !isNumber(value);
+                    case 'lineHeight':
+                        return !isNumber(value);
+                    case 'lineSpacing':
+                        return !isNumber(value);
+                    case 'fontSize':
+                        return !isNumber(value);
+                    case 'indentSize':
+                        return !isNumber(value);
+                    case 'theme':
+                        return typeof value !== 'string';
+                    default:
+                        return false;
+                }
+            });
+            
+            if (invalidParams.length === 0) next(); // call the next middleware or route handler
+            else error(response, 400, `Invalid parameter value: ${invalidParams.join(', ')}`);
+        } catch (e) {
+            return error(response, 400, `Invalid JSON object provided.`); // if the object is invalid, return an error
+        }
+    } else error(response, 404, `Not found.`);
 };
