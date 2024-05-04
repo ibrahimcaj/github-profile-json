@@ -17,6 +17,7 @@ app.get('/', async (request, response) => {
         paddingY: request.query.paddingY,
         lineHeight: request.query.lineHeight,
         lineSpacing: request.query.lineSpacing,
+        fontSize: request.query.fontSize,
         indentSize: request.query.indentSize,
         oneLine: request.query.oneLine,
         theme: request.query.theme,

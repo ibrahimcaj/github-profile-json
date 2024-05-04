@@ -10,7 +10,7 @@ class Snippet {
 
         this.lineHeight = lineHeight ?? fontSize;
         this.lineSpacing = lineSpacing;
-        this.fontSize = fontSize;
+        this.fontSize = Math.max(fontSize, 1);
 
         this.indentSize = Math.max(Math.min(indentSize, 8), 0); // max indent size is 8, and minimum is 0
         this.oneLine = (oneLine == 'true') ? true : false; // whether or not the code should be formatted on one line
@@ -93,7 +93,7 @@ class Snippet {
                     }       
 
                     * {
-                        font-size: ${this.fontSize};
+                        font-size: ${this.fontSize}px;
                         font-family: 'Hack';
                     }
 
