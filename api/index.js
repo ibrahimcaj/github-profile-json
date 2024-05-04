@@ -22,6 +22,7 @@ app.get('/', async (request, response) => {
         oneLine: request.query.oneLine,
         theme: request.query.theme,
         background: request.query.background,
+        height: request.query.height,
     });
 
     // stores the rendered svg in a variable
