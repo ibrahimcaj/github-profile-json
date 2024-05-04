@@ -11,7 +11,7 @@ module.exports = async (response, status, message) => {
         }
     ));
 
-    response.writeHead(status, {
+    response.writeHead(200, {
         'Content-Type': 'image/svg+xml',
         'Content-Length': svg.length
     });
