@@ -2,7 +2,7 @@ const error = require("./error");
 
 module.exports = (request, response, next) => {
     if (request.path === "/") {
-        if (!request.query.object) return error(response, 400, `Object not provided.`); // if the object is not provided, return an error
+        if (!request.query.object) return error(response, 400, 'Object not provided.'); // if the object is not provided, return an error
 
         try {
             JSON.parse(request.query.object); // try to parse the object
@@ -35,7 +35,7 @@ module.exports = (request, response, next) => {
             if (invalidParams.length === 0) next(); // call the next middleware or route handler
             else error(response, 400, `Invalid parameter value: ${invalidParams.join(', ')}`);
         } catch (e) {
-            return error(response, 400, `Invalid JSON object provided.`); // if the object is invalid, return an error
+            return error(response, 400, 'Invalid JSON object provided.'); // if the object is invalid, return an error
         }
-    } else error(response, 404, `Not found.`);
+    } else error(response, 404, 'Not found.');
 };
