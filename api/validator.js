@@ -1,8 +1,14 @@
+const fs = require("fs");
+const path = require("path");
 const error = require("./error");
 
 module.exports = (request, response, next) => {
     if (request.path === "/") {
         if (!request.query.object) return error(response, 400, 'Object not provided.'); // if the object is not provided, return an error
+
+        if (request.query.theme && !fs.existsSync(path.join(process.cwd(), `./api/styles/${request.query.theme}.css`))) {
+            return error(response, 400, 'Invalid theme provided.');
+        }
 
         try {
             JSON.parse(request.query.object); // try to parse the object
