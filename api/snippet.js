@@ -1,14 +1,12 @@
 const hljs = require('highlight.js');
-const prettier = require('prettier');
 
 class Snippet {
     constructor({ paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, theme = 'obsidian', background = false }) {
         this.paddingX = parseInt(paddingX);
         this.paddingY = parseInt(paddingY ?? fontSize);
 
-        this.lineHeight = lineHeight ?? fontSize;
+        this.lineHeight = lineHeight ?? fontSize; // font size is not modifiable, it's a constant value
         this.lineSpacing = lineSpacing;
-        this.fontSize = Math.max(Math.min(fontSize, 20), 6); // max font size is 20, and minimum is 6
 
         this.indentSize = Math.max(Math.min(indentSize, 8), 0); // max indent size is 8, and minimum is 0
 
