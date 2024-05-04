@@ -61,7 +61,7 @@ class Snippet {
 
     async render(object) { // takes in the object and then renders it as an svg
         var result = await this.process(object); // processes the object
-        var height = result.length * this.lineHeight + this.paddingY + ((result.length - 1) * this.lineSpacing); // calculates the height of the svg
+        var height = result.length * this.lineHeight + this.paddingY + ((result.length - 1) * this.lineSpacing) + this.paddingY; // calculates the height of the svg
         
         return `
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 600 ${height}" font-family="Hack" class="${!this.background || 'hljs'}">
