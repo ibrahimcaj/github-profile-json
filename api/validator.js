@@ -27,12 +27,8 @@ module.exports = (request, response, next) => {
                         return !isNumber(value);
                     case 'lineSpacing':
                         return !isNumber(value);
-                    case 'fontSize':
-                        return !isNumber(value);
                     case 'indentSize':
                         return !isNumber(value);
-                    case 'theme':
-                        return typeof value !== 'string';
                     default:
                         return false;
                 }
