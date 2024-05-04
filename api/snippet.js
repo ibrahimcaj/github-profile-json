@@ -8,8 +8,9 @@ class Snippet {
         this.paddingX = parseInt(paddingX);
         this.paddingY = parseInt(paddingY ?? fontSize);
 
-        this.lineHeight = lineHeight ?? fontSize; // font size is not modifiable, it's a constant value
+        this.lineHeight = lineHeight ?? fontSize;
         this.lineSpacing = lineSpacing;
+        this.fontSize = fontSize;
 
         this.indentSize = Math.max(Math.min(indentSize, 8), 0); // max indent size is 8, and minimum is 0
         this.oneLine = (oneLine == 'true') ? true : false; // whether or not the code should be formatted on one line
@@ -65,14 +66,14 @@ class Snippet {
         var height = result.length * this.lineHeight + this.paddingY + ((result.length - 1) * this.lineSpacing) + this.paddingY; // calculates the height of the svg
         
         return `
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 600 ${height}" font-family="Hack" class="${!this.background || 'hljs'}">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100% ${height}" font-family="Hack" class="${!this.background || 'hljs'}">
                 <style>
                     /*!s
                     *  Hack typeface https://github.com/source-foundry/Hack
                     *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
                     */
                     /* FONT PATHS
-                        * -------------------------- */
+                    * -------------------------- */
                     @font-face {
                         font-family: 'Hack';
                         src: url('${Fonts['hack-subset-woff2']}') format('woff2'),
@@ -87,7 +88,7 @@ class Snippet {
                         src: url('${Fonts['hack-subset-italic-woff2']}') format('woff2'),
                             url('${Fonts['hack-subset-italic-woff']}') format('woff');
                         
-                            font-weight: 400;
+                        font-weight: 400;
                         font-style: italic;
                     }       
 
