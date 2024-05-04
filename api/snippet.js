@@ -4,9 +4,9 @@ const path = require('path');
 const Fonts = require('./fonts.json');
 
 class Snippet {
-    constructor({ width = 300, height, paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, oneLine = false, theme = 'obsidian', background = false }) {
-        this.width = width;
-        this.height = height;
+    constructor({ viewboxWidth = 300, viewboxHeight, paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, oneLine = false, theme = 'obsidian', background = false }) {
+        this.viewboxWidth = viewboxWidth;
+        this.viewboxHeight = viewboxHeight;
         
         this.paddingX = parseInt(paddingX);
         this.paddingY = parseInt(paddingY ?? fontSize);
@@ -34,7 +34,7 @@ class Snippet {
         string = await this.format(string);
 
         var lines = string.split('\n').map((line) => { // splits the provided string by linebreaks maps each line by its highlighted version
-            return hljs.highlight(line, { language: 'js' }).value // highlights the provided string
+            return hljs.highlight(line, { language: 'json' }).value // highlights the provided string
                 .replace(/<span/g, '<tspan').replace(/<\/span>/g, '</tspan>'); // replaces the <span> tags with <tspan> tags
         });
     
@@ -60,7 +60,7 @@ class Snippet {
         
             return string; // returns the string in its highlighted form with correct syntax applied
         });
-    
+
         return lines;
     }
 
@@ -68,44 +68,48 @@ class Snippet {
         var result = await this.process(object); // processes the object
         
         const lines = await this.process(object); // processes the object
-        const height = result.length * this.lineHeight + this.paddingY + ((result.length - 1) * this.lineSpacing) + this.paddingY; // calculates the height of the svg
+        const viewboxHeight = result.length * this.lineHeight + this.paddingY + ((result.length - 1) * this.lineSpacing) + this.paddingY; // calculates the viewboxHeight of the svg
 
         return `
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 ${this.width} ${this.height ?? height}" font-family="Hack" class="${!this.background || 'hljs'}">
-            <style>
-                /*!s
-                *  Hack typeface https://github.com/source-foundry/Hack
-                *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
-                */
-                /* FONT PATHS
-                * -------------------------- */
-                @font-face {
-                font-family: 'Hack';
-                src: url('${Fonts['hack-subset-woff2']}') format('woff2'),
-                    url('${Fonts['hack-subset-woff']}') format('woff');
-                
-                font-weight: 400;
-                font-style: normal;
-                }
-                
-                @font-face {
-                font-family: 'Hack';
-                src: url('${Fonts['hack-subset-italic-woff2']}') format('woff2'),
-                    url('${Fonts['hack-subset-italic-woff']}') format('woff');
-                
-                font-weight: 400;
-                font-style: italic;
-                }       
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 ${this.viewboxWidth} ${this.viewboxHeight ?? viewboxHeight}" font-family="Hack" class="${!this.background || 'hljs'}">
+                <style>
+                    /*!s
+                    *  Hack typeface https://github.com/source-foundry/Hack
+                    *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
+                    */
 
-                * {
-                font-size: ${this.fontSize}px;
-                font-family: 'Hack';
-                }
+                    /* FONT PATHS
+                    * -------------------------- */
+                    @font-face {
+                        font-family: 'Hack';
+                        src: url('${Fonts['hack-subset-woff2']}') format('woff2'),
+                            url('${Fonts['hack-subset-woff']}') format('woff');
+                    
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                    
+                    @font-face {
+                        font-family: 'Hack';
+                        src: url('${Fonts['hack-subset-italic-woff2']}') format('woff2'),
+                            url('${Fonts['hack-subset-italic-woff']}') format('woff');
+                    
+                        font-weight: 400;
+                        font-style: italic;
+                    }       
 
-                ${fs.readFileSync(path.join(process.cwd(), `./api/styles/${this.theme}.css`)).toString()}
-            </style>
+                    * {
+                        /* specifying the font size */
+                        font-size: ${this.fontSize}px;
+                        font-family: 'Hack';
+                    }
 
-            ${lines.join('')}
+                    /* including the specified theme css file contents */
+                    ${fs.readFileSync(path.join(process.cwd(), `./api/styles/${this.theme}.css`)).toString()}
+                </style>
+
+                /* and finally, the rendered svg */
+                ${lines.join('')}
             </svg>
         `;
     }
