@@ -17,11 +17,13 @@ app.get('/', async (request, response) => {
 
         paddingX: request.query.paddingX,
         paddingY: request.query.paddingY,
-        lineHeight: request.query.lineHeight,
+
         lineSpacing: request.query.lineSpacing,
         fontSize: request.query.fontSize,
+
         indentSize: request.query.indentSize,
         oneLine: request.query.oneLine,
+
         theme: request.query.theme,
         background: request.query.background,
     });

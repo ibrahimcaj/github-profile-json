@@ -4,14 +4,13 @@ const path = require('path');
 const Fonts = require('./fonts.json');
 
 class Snippet {
-    constructor({ viewboxWidth = 300, viewboxHeight, paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, oneLine = false, theme = 'obsidian', background = false }) {
+    constructor({ viewboxWidth = 300, viewboxHeight, paddingX = 8, paddingY = 18, lineSpacing = 1, fontSize = 12, indentSize = 2, oneLine = false, theme = 'obsidian', background = false }) {
         this.viewboxWidth = viewboxWidth;
         this.viewboxHeight = viewboxHeight;
         
         this.paddingX = parseInt(paddingX);
         this.paddingY = parseInt(paddingY ?? fontSize);
 
-        this.lineHeight = lineHeight ?? fontSize;
         this.lineSpacing = lineSpacing;
         this.fontSize = Math.max(fontSize, 1);
 
@@ -33,7 +32,8 @@ class Snippet {
     async process(string) { // highlights the syntax of the provided string and applies the needed class names to each token
         string = await this.format(string);
 
-        var lines = string.split('\n').map((line) => { // splits the provided string by linebreaks maps each line by its highlighted version
+        var rawLines = string.split('\n');
+        var highlightedLines = rawLines.map((line) => { // splits the provided string by linebreaks maps each line by its highlighted version
             return hljs.highlight(line, { language: 'json' }).value // highlights the provided string
                 .replace(/<span/g, '<tspan').replace(/<\/span>/g, '</tspan>'); // replaces the <span> tags with <tspan> tags
         });
@@ -43,32 +43,32 @@ class Snippet {
     
         // great, now the lines are separated and highlighted
         // now we need to wrap each line inside of a <text> tag, with its own spacing values, from the provided this
-        lines = lines.map((line, index) => {
+        highlightedLines = highlightedLines.map((line, index) => {
             // specifies the x and y values of the text tag
-            var string = `<text x="${currentX}" y="${index * (this.lineHeight + this.lineSpacing) + this.paddingY}" class="hljs">${line}</text>`;
+            var string = `<text x="${currentX}" y="${this.paddingY}" ${index == 0 ? 'ry' : 'dy'}="${(this.fontSize + this.lineSpacing) * index}" class="hljs">${line}</text>`;
         
             // if the current line ends in any of the three opening brackets, add an indent
             // (will get passed onto the next line and won't affect the current line as the values have been inserted above already)
-            if (/[(\[{]\s*,?$/.test(line)) currentX += 7.5 * this.indentSize;
+            if (/[(\[{]\s*,?$/.test(rawLines[index])) currentX += 7.5 * this.indentSize;
             
             // if the current line is not the last line,
             // check if the *following* line ends in any of the closing brackets, remove an indent
             // this change will also get passed onto the next line
-            if (index != (lines.length - 1)) {
-                if (/[)\]}]\s*,?$/.test(lines[index + 1])) currentX -= 7.5 * this.indentSize;
+            if (index != (highlightedLines.length - 1)) {
+                if (/[)\]}]\s*,?$/.test(rawLines[index + 1])) currentX -= 7.5 * this.indentSize;
             }
         
             return string; // returns the string in its highlighted form with correct syntax applied
         });
 
-        return lines;
+        return highlightedLines;
     }
 
     async render(object) { // takes in the object and then renders it as an svg
         var result = await this.process(object); // processes the object
         
         const lines = await this.process(object); // processes the object
-        const viewboxHeight = result.length * this.lineHeight + this.paddingY + ((result.length - 1) * this.lineSpacing) + this.paddingY; // calculates the viewboxHeight of the svg
+        const viewboxHeight = result.length * this.lineHeight + this.paddingY + this.paddingY; // calculates the viewboxHeight of the svg
 
         return `
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 ${this.viewboxWidth} ${this.viewboxHeight ?? viewboxHeight}" font-family="Hack" class="${!this.background || 'hljs'}">

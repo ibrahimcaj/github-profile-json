@@ -20,13 +20,8 @@ module.exports = (request, response, next) => {
 
                 switch (parameter) {
                     case 'paddingX':
-                        return !isNumber(value);
                     case 'paddingY':
-                        return !isNumber(value);
-                    case 'lineHeight':
-                        return !isNumber(value);
                     case 'lineSpacing':
-                        return !isNumber(value);
                     case 'indentSize':
                         return !isNumber(value);
                     default:
