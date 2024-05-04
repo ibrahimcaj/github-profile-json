@@ -1,11 +1,16 @@
-
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
 const Snippet = require('./snippet');
-const readFile = require('./utility/readFile');
+const Validator = require('./validator');
+const Fonts = require('./fonts.json');
 
 // initializes the app
 const app = express();
+
+// use the validation middleware
+app.use(Validator);
 
 app.get('/', async (request, response) => {
     // creates a new snippet object
@@ -36,8 +41,8 @@ app.get('/', async (request, response) => {
                     * -------------------------- */
                 @font-face {
                     font-family: 'Hack';
-                    src: url('${readFile('fonts/hack-subset.woff')}') format('woff2'),
-                        url('${readFile('fonts/hack-subset.woff2')}') format('woff');
+                    src: url('${Fonts['hack-subset-woff2']}') format('woff2'),
+                        url('${Fonts['hack-subset-woff']}') format('woff');
                     
                     font-weight: 400;
                     font-style: normal;
@@ -45,8 +50,8 @@ app.get('/', async (request, response) => {
                 
                 @font-face {
                     font-family: 'Hack';
-                    src: url('${readFile('fonts/hack-italic-subset.woff')}') format('woff2'),
-                        url('${readFile('fonts/hack-italic-subset.woff2')}') format('woff');
+                    src: url('${Fonts['hack-subset-italic-woff2']}') format('woff2'),
+                        url('${Fonts['hack-subset-italic-woff']}') format('woff');
                     
                         font-weight: 400;
                     font-style: italic;
@@ -57,7 +62,7 @@ app.get('/', async (request, response) => {
                     font-family: 'Hack';
                 }
 
-                ${readFile(`styles/${snippet.theme}.css`).toString()}
+                ${fs.readFileSync(path.join(process.cwd(), `./api/styles/${snippet.theme}.css`)).toString()}
             </style>
 
             ${result.join('')}
