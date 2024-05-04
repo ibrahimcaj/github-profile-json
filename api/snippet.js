@@ -4,7 +4,7 @@ const path = require('path');
 const Fonts = require('./fonts.json');
 
 class Snippet {
-    constructor({ paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, theme = 'obsidian', background = false }) {
+    constructor({ paddingX = 8, paddingY = 18, lineHeight, lineSpacing = 8, fontSize = 12, indentSize = 2, oneLine = false, theme = 'obsidian', background = false }) {
         this.paddingX = parseInt(paddingX);
         this.paddingY = parseInt(paddingY ?? fontSize);
 
@@ -12,6 +12,7 @@ class Snippet {
         this.lineSpacing = lineSpacing;
 
         this.indentSize = Math.max(Math.min(indentSize, 8), 0); // max indent size is 8, and minimum is 0
+        this.oneLine = (oneLine == 'true') ? true : false; // whether or not the code should be formatted on one line
 
         this.theme = theme;
 
@@ -20,7 +21,7 @@ class Snippet {
 
     format(string) { // formats the provided string
         string = JSON.parse(string);
-        string = JSON.stringify(string, null, 4);
+        string = JSON.stringify(string, null, this.oneLine ? '' : 2); // formats the string whether or not oneline was specified
         
         return string;
     }
