@@ -9,7 +9,7 @@
 <!-- features section -->
 <img src="https://github-profile-json.vercel.app/?indent=4&theme=tokyo-night-dark&fontSize=4&viewboxWidth=300&viewboxHeight=5&paddingY=4&oneLine=true&object={%22section%22:%22features%22}" />
 
-<img src="https://github-profile-json.vercel.app/?indent=4&theme=tokyo-night-dark&fontSize=4&viewboxWidth=300&viewboxHeight=20&paddingY=4&object=[%20%22You%20can%20adjust%20values%20to%20your%20liking,%20such%20as%20the%20snippet%20padding,%20line%20spacing,%20viewbox%20width/height%20and%20indent%20size!%22,%20%22There%20are%20also%20200+%20themes%20you%20can%20choose%20from,%20including%20your%20favourite%20code%20editor%20themes!%22%20]" />
+<img src="https://github-profile-json.vercel.app/?indent=4&theme=tokyo-night-dark&fontSize=4&viewboxWidth=300&viewboxHeight=20&paddingY=4&object=[%20%22You%20can%20adjust%20values%20to%20your%20liking,%20such%20as%20the%20snippet%20padding,%20line%20spacing,%20viewbox%20width/height%20and%20indent%20!%22,%20%22There%20are%20also%20200+%20themes%20you%20can%20choose%20from,%20including%20your%20favourite%20code%20editor%20themes!%22%20]" />
 
 <!-- themes section -->
 <img src="https://github-profile-json.vercel.app/?indent=4&theme=tokyo-night-dark&fontSize=4&viewboxWidth=300&viewboxHeight=5&paddingY=4&oneLine=true&object={%22section%22:%22themes%22}" />
