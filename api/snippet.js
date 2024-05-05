@@ -4,7 +4,7 @@ const path = require('path');
 const Fonts = require('./fonts.json');
 
 class Snippet {
-    constructor({ viewboxWidth = 300, viewboxHeight, paddingX = 8, paddingY = 18, lineSpacing = 1, fontSize = 12, indentSize = 2, oneLine = false, theme = 'github-dark', background = false }) {
+    constructor({ viewboxWidth = 300, viewboxHeight, paddingX = 8, paddingY = 18, lineSpacing = 1, fontSize = 12, indentSize = 2, oneLine = false, theme = 'github-dark', background = true }) {
         this.viewboxWidth = viewboxWidth;
         this.viewboxHeight = viewboxHeight;
         
