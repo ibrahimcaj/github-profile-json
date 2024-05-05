@@ -6,6 +6,7 @@ module.exports = (request, response, next) => {
     if (request.path === "/") {
         if (!request.query.object) return error(response, 400, 'Object not provided.'); // if the object is not provided, return an error
 
+        // checks if the theme file exists
         if (request.query.theme && !fs.existsSync(path.join(process.cwd(), `./api/styles/${request.query.theme}.css`))) {
             return error(response, 400, 'Invalid theme provided.');
         }
@@ -13,9 +14,11 @@ module.exports = (request, response, next) => {
         try {
             JSON.parse(request.query.object); // try to parse the object
 
+            // checks if the parameters are valid
             const invalidParams = Object.keys(request.query).filter((parameter) => {
                 const value = request.query[parameter];
 
+                // checks if the value is a number
                 var isNumber = (number) => { return !isNaN(parseInt(number)); }
 
                 switch (parameter) {

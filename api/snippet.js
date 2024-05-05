@@ -73,11 +73,11 @@ class Snippet {
         return `
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 ${this.viewboxWidth} ${this.viewboxHeight ?? viewboxHeight}" font-family="Hack" class="${!this.background || 'hljs'}">
                 <style>
+                    /* specifying the fonts */
                     /*!s
                     *  Hack typeface https://github.com/source-foundry/Hack
                     *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
                     */
-
                     /* FONT PATHS
                     * -------------------------- */
                     @font-face {
@@ -104,11 +104,11 @@ class Snippet {
                         font-family: 'Hack';
                     }
 
-                    /* including the specified theme css file contents */
+                    /* the specified css theme */
                     ${fs.readFileSync(path.join(process.cwd(), `./api/styles/${this.theme}.css`)).toString()}
                 </style>
 
-                /* and finally, the rendered svg */
+                /* the rendered svg */
                 ${lines.join('')}
             </svg>
         `;
