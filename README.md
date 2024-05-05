@@ -21,7 +21,7 @@
 
 [`https://github-profile-json.vercel.app/?indent=4&theme=github-dark&fontSize=4&viewboxWidth=300&viewboxHeight=5&paddingY=4&object={%20%22foo%22:%20%22bar%22,%20%22numbers%22:%20[1,%202,%203]%20}`](https://github-profile-json.vercel.app/?indent=4&theme=github-dark&fontSize=4&viewboxWidth=300&viewboxHeight=5&paddingY=4&background=false&object={%20%22foo%22:%20%22bar%22,%20%22numbers%22:%20[1,%202,%203]%20})
 
-<img src="https://github-profile-json.vercel.app/?indent=4&theme=tokyo-night-dark&fontSize=4&viewboxWidth=300&viewboxHeight=40&paddingY=4&object={%20%22foo%22:%20%22bar%22,%20%22numbers%22:%20[1,%202,%203]%20}" />
+<img src="https://github-profile-json.vercel.app/?indent=4&theme=github-dark&fontSize=4&viewboxWidth=300&viewboxHeight=40&paddingY=4&object={%20%22foo%22:%20%22bar%22,%20%22numbers%22:%20[1,%202,%203]%20}" />
 
 <!-- themes section -->
 <img src="https://github-profile-json.vercel.app/?indent=4&theme=tokyo-night-dark&fontSize=4&viewboxWidth=300&viewboxHeight=5&paddingY=4&oneLine=true&object={%22section%22:%22themes%22}" />
